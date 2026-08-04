@@ -1,69 +1,32 @@
 # Student Performance Prediction
 
-[Project Overview](#project-overview) • [Objective](#objective) • [Process](#process) • [Tools Used](#tools-used) • [Analysis / Procedure](#analysis--procedure) • [Outcomes](#outcomes) • [Learning and Difficulties](#learning-and-difficulties) • [Future Aspects](#future-aspects)
-
----
-
-## Project Overview
-
-This project predicts a student's performance score using a small machine learning workflow built in Python. It starts with a synthetic student dataset and uses features such as study hours, attendance, assignments completed, and sleep hours to estimate performance.
-
-<details>
-<summary>What this project demonstrates</summary>
-
-- Data creation and exploration
-- Feature selection and preprocessing
-- Model training with a pipeline
-- Cross-validation for more reliable evaluation
-- Prediction for a new student profile
-
-</details>
+## Project Description
+This project predicts student performance scores from academic and lifestyle inputs such as study hours, attendance, assignments completed, and sleep hours. It uses a compact machine learning workflow built in Python and demonstrated in a Jupyter Notebook.
 
 ## Objective
-
-The objective of the project is to build a simple but more advanced prediction system that can estimate academic performance from student behavior and study habits.
-
-<details>
-<summary>Primary goals</summary>
-
-- Understand which factors influence performance
-- Compare training and cross-validated results
-- Produce a reusable prediction workflow
-- Show the result clearly in a notebook and README
-
-</details>
+To build a clean regression-based prediction system that estimates student performance, evaluates model quality more reliably, and produces a score prediction for a new student profile.
 
 ## Process
-
 ```mermaid
 flowchart LR
-    A[Create dataset] --> B[Explore data]
-    B --> C[Select features]
-    C --> D[Train-test split]
-    D --> E[Pipeline: PolynomialFeatures + StandardScaler + Ridge]
-    E --> F[Cross-validation]
-    F --> G[Evaluate results]
-    G --> H[Predict new student score]
+        A[Create dataset] --> B[Explore and visualize]
+        B --> C[Select features]
+        C --> D[Train/test split]
+        D --> E[Pipeline: PolynomialFeatures + StandardScaler + Ridge]
+        E --> F[Cross-validation]
+        F --> G[Evaluate metrics]
+        G --> H[Predict new student score]
 ```
 
-<details>
-<summary>Step-by-step workflow</summary>
-
-1. A student dataset is created with academic and lifestyle features.
-2. The target variable, performance score, is generated from the input features.
-3. The dataset is split into training and testing subsets.
-4. A machine learning pipeline is built with polynomial feature expansion, scaling, and Ridge regression.
-5. Five-fold cross-validation is used to check how stable the model is.
-6. The model is evaluated on the holdout test set.
-7. A new student profile is passed into the model to generate a predicted score.
-
-</details>
+1. Create a student dataset with performance-related features.
+2. Explore the data and visualize the relationship between study hours and performance.
+3. Split the dataset into training and testing sets.
+4. Train a pipeline with polynomial features, scaling, and Ridge regression.
+5. Validate the model with K-fold cross-validation.
+6. Measure performance on the holdout test set.
+7. Predict the score of a new student.
 
 ## Tools Used
-
-<details>
-<summary>Development tools</summary>
-
 - Python
 - Jupyter Notebook
 - Pandas
@@ -71,32 +34,10 @@ flowchart LR
 - Matplotlib
 - scikit-learn
 
-</details>
-
-<details>
-<summary>Machine learning methods</summary>
-
-- Train/test split
-- Polynomial feature engineering
-- Standardization
-- Ridge regression
-- K-fold cross-validation
-- Evaluation using MAE and R-squared
-
-</details>
-
 ## Analysis / Procedure
-
-The notebook follows a clear ML pipeline:
-
-1. Create a dataset with student-related inputs.
-2. Visualize the relationship between study hours and performance.
-3. Train a regression model using a pipeline.
-4. Measure performance with cross-validation and holdout testing.
-5. Predict the score for a new student.
+The notebook follows a simple machine learning flow: data creation, visualization, preprocessing, model training, evaluation, and prediction. The advanced version of the model uses polynomial features to capture non-linear patterns, standardization for stable training, and Ridge regression to reduce overfitting.
 
 ### Screenshots
-
 <table>
     <tr>
         <td align="center">
@@ -120,72 +61,26 @@ The notebook follows a clear ML pipeline:
     </tr>
 </table>
 
-<details>
-<summary>Why the model is more advanced now</summary>
-
-Instead of a plain linear regression baseline, the notebook now uses a pipeline with:
-
-- PolynomialFeatures to capture non-linear patterns
-- StandardScaler to normalize feature values
-- Ridge regression to reduce overfitting
-- KFold cross-validation for better evaluation
-
-</details>
-
 ## Outcomes
-
-The notebook now produces:
-
-- A trained prediction model
+- A trained student performance prediction model
 - Cross-validated MAE and R-squared values
-- Holdout test-set metrics
-- A score prediction for a new student
-
-<details>
-<summary>Example result</summary>
-
-The upgraded pipeline returns a strong fit on the small synthetic dataset and generates a predicted performance score for the sample student profile.
-
-</details>
+- Holdout test-set evaluation results
+- A predicted score for a new student profile
 
 ## Learning and Difficulties
+### Learning
+- Building a full machine learning workflow from data to prediction
+- Improving model quality with preprocessing and feature engineering
+- Using cross-validation to get a more reliable evaluation
 
-<details>
-<summary>What I learned</summary>
-
-- How to structure a full ML notebook from data creation to prediction
-- How preprocessing improves model quality
-- How cross-validation gives a better estimate than a single train/test split
-- How to package the workflow with a pipeline
-
-</details>
-
-<details>
-<summary>Challenges faced</summary>
-
+### Difficulties
 - Keeping the notebook organized while adding more advanced steps
-- Making sure the pipeline still worked with the prediction cell
-- Interpreting evaluation metrics on a very small dataset
-- Formatting the README so it is clear and presentation-ready
-
-</details>
+- Making the prediction cell work correctly with the pipeline
+- Interpreting metrics on a small synthetic dataset
 
 ## Future Aspects
-
-<details>
-<summary>Possible improvements</summary>
-
 - Use a real student dataset instead of synthetic data
-- Add more features such as exam history, participation, and parent support
-- Compare multiple models such as Random Forest, SVR, and XGBoost
+- Add more meaningful academic and behavioral features
+- Compare additional models such as Random Forest, SVR, or XGBoost
 - Save the trained model for reuse
-- Build a simple web app for live predictions
-- Add screenshots and charts directly into the README
-
-</details>
-
----
-
-## Quick Summary
-
-This project predicts student performance using a more advanced regression workflow and presents the process in a simple, readable format for both README and presentation use.
+- Build a small web app for live predictions
