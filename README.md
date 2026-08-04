@@ -42,21 +42,21 @@ The notebook follows a simple machine learning flow: data creation, visualizatio
     <tr>
         <td align="center">
             <strong>Dataset Preview</strong><br>
-            <img src="Screenshot%202026-08-04%20171913.png" alt="Dataset preview table" width="320">
+            <img src="assets/dataset-preview.png" alt="Dataset preview table" width="320">
         </td>
         <td align="center">
             <strong>Study Hours vs Performance</strong><br>
-            <img src="Screenshot%202026-08-04%20171924.png" alt="Scatter plot of study hours versus performance score" width="320">
+            <img src="assets/study-hours-performance.png" alt="Scatter plot of study hours versus performance score" width="320">
         </td>
     </tr>
     <tr>
         <td align="center">
             <strong>Model Evaluation</strong><br>
-            <img src="Screenshot%202026-08-04%20171932.png" alt="Cross-validated and holdout performance metrics" width="320">
+            <img src="assets/model-evaluation.png" alt="Cross-validated and holdout performance metrics" width="320">
         </td>
         <td align="center">
             <strong>Final Prediction</strong><br>
-            <img src="Screenshot%202026-08-04%20171941.png" alt="Predicted score and final dataset output" width="320">
+            <img src="assets/final-prediction.png" alt="Predicted score and final dataset output" width="320">
         </td>
     </tr>
 </table>
