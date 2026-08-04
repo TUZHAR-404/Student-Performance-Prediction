@@ -95,24 +95,30 @@ The notebook follows a clear ML pipeline:
 4. Measure performance with cross-validation and holdout testing.
 5. Predict the score for a new student.
 
-<details>
-<summary>Screenshot guide for the README / PPT</summary>
+### Screenshots
 
-Add screenshots from your notebook here for a stronger presentation:
-
-- Dataset preview table
-- Scatter plot showing study hours vs performance score
-- Model evaluation output with MAE and R-squared
-- Final prediction output for the new student
-
-Recommended filenames if you later save images:
-
-- `assets/dataset-preview.png`
-- `assets/scatter-plot.png`
-- `assets/model-results.png`
-- `assets/prediction-output.png`
-
-</details>
+<table>
+    <tr>
+        <td align="center">
+            <strong>Dataset Preview</strong><br>
+            <img src="Screenshot%202026-08-04%20171913.png" alt="Dataset preview table" width="320">
+        </td>
+        <td align="center">
+            <strong>Study Hours vs Performance</strong><br>
+            <img src="Screenshot%202026-08-04%20171924.png" alt="Scatter plot of study hours versus performance score" width="320">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <strong>Model Evaluation</strong><br>
+            <img src="Screenshot%202026-08-04%20171932.png" alt="Cross-validated and holdout performance metrics" width="320">
+        </td>
+        <td align="center">
+            <strong>Final Prediction</strong><br>
+            <img src="Screenshot%202026-08-04%20171941.png" alt="Predicted score and final dataset output" width="320">
+        </td>
+    </tr>
+</table>
 
 <details>
 <summary>Why the model is more advanced now</summary>
