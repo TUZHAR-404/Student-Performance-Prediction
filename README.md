@@ -90,3 +90,5 @@ The notebook follows a simple machine learning flow: data creation, visualizatio
 - Compare additional models such as Random Forest, SVR, or XGBoost
 - Save the trained model for reuse
 - Build a small web app for live predictions
+
+
